@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <inset android:drawable="@drawable/custom_underline_text"
+           android:insetLeft="180dp" android:insetRight="180dp"/>
+</item>
+
+</layer-list>

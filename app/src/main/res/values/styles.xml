@@ -12,5 +12,6 @@
     <style name="Custom_text_select">
         <item name="android:background">@drawable/custom_underline_text</item>
         <item name="android:textColor">#000</item>
+        <item name="android:paddingBottom">4dp</item>
     </style>
 </resources>

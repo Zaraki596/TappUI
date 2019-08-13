@@ -10,6 +10,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mt_no_word_card.setBackgroundResource(R.drawable.grey_border)
     }
 }
