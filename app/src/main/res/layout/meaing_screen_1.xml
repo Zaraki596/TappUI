@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/meaning_1_container"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card1_post1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardPreventCornerOverlap="true">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_english_meaning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
+
+
+            <ImageView
+                    android:id="@+id/english_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_english_meaning"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_english_meaning"
+                    app:layout_constraintVertical_bias="0.51"
+                    app:srcCompat="@drawable/ic_speaker_filled" />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card1_post2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/tv_hindi_meaning"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:background="@drawable/rectangle_background">
+
+
+            <ImageView
+                    android:id="@+id/word_image"
+                    android:layout_width="250dp"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                    android:id="@+id/tv_detail_explanation_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#4D4B4B"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+                android:id="@+id/tv_detail_explanation_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_background"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#4D4B4B"
+                android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp">
+
+        <com.like.LikeButton
+                android:id="@+id/loveTheWord"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:circle_end_color="#ff096f"
+                app:circle_start_color="#ff096f"
+                app:dots_primary_color="#ff096f"
+                app:dots_secondary_color="#ff096f"
+                app:icon_size="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/share_meaning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <com.like.LikeButton
+                android:id="@+id/share_meaning"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:circle_end_color="#000"
+                app:circle_start_color="#000"
+                app:dots_primary_color="#000"
+                app:dots_secondary_color="#000"
+                app:icon_size="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/report_word"
+                app:layout_constraintStart_toEndOf="@+id/loveTheWord"
+                app:layout_constraintTop_toTopOf="parent"
+                app:like_drawable="@drawable/share_app"
+                app:unlike_drawable="@drawable/share_app" />
+
+        <com.like.LikeButton
+                android:id="@+id/report_word"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:circle_end_color="#FFFFEB3B"
+                app:circle_start_color="#FFFFEB3B"
+                app:dots_primary_color="#FFFFEB3B"
+                app:dots_secondary_color="#FFFFEB3B"
+                app:icon_size="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/share_meaning"
+                app:layout_constraintTop_toTopOf="parent"
+                app:like_drawable="@drawable/report_word"
+                app:unlike_drawable="@drawable/report_word" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
