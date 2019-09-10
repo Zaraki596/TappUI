@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mt_color_blue">#1870C9</color>
     <color name="corner_color">#C2BFBF</color>
+    <color name="black">#000000</color>
 </resources>
